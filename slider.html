@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+		<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+		<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+		<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+		<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title>Home Furniturestore 1 - Slider Revolution</title>
+			<meta name="description" content="Slider Revolution Example" />
+			<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+			<meta name="author" content="ThemePunch" />
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<!-- LOAD JQUERY LIBRARY -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+			
+			<!-- LOADING FONTS AND ICONS -->
+			<link href="https://fonts.googleapis.com/css?family=Roboto:400%7CMontserrat:600%7CSora:700%2C600&display=swap" rel="stylesheet" property="stylesheet" media="all" type="text/css" >
+
+			
+			<link rel="stylesheet" type="text/css" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+			<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+			
+			<!-- REVOLUTION STYLE SHEETS -->
+			<link rel="stylesheet" type="text/css" href="css/rs6.css">
+			<!-- REVOLUTION LAYERS STYLES -->
+						<!-- REVOLUTION JS FILES -->
+			
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+					<script src="js/rbtools.min.js"></script>
+							<script src="js/rs6.min.js"></script>
+							
+			<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+
+			
+		</head>
+		
+		<body>
+		
+
+			<!-- START Home Furniturestore 1 REVOLUTION SLIDER 6.5.31 --><p class="rs-p-wp-fix"></p>
+			<rs-module-wrap id="rev_slider_4_1_wrapper" data-alias="home-furniturestore-1" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+				<rs-module id="rev_slider_4_1" style="" data-version="6.5.31">
+					<rs-slides>
+						<rs-slide style="position: absolute;" data-key="rs-4" data-title="Slide" data-anim="adpr:false;" data-in="o:0;" data-out="a:false;">
+							<img src="assets/dummy.png" alt="Slide" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="assets/transparent.png" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-4-slide-4-layer-0" 
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="x:c;y:t,t,b,b;yo:30px,30px,0,30px;"
+								data-text="w:normal;s:20,20,12,12;l:0,0,15,15;"
+								data-dim="w:90%,90%,95%,95%;h:670px,670px,90%,90%;"
+								data-vbility="t,t,f,t"
+								data-basealign="slide"
+								data-border="bor:32px,32px,32px,32px;"
+								data-frame_999="o:0;st:w;sR:8700;"
+								style="z-index:8;background-color:#0b3954;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-4-slide-4-layer-1" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-1px,-1px,0,-1px;yo:68px,68px,42px,42px;"
+								data-text="w:normal;s:20,20,12,12;l:0,0,15,15;"
+								data-dim="w:['95%','95%','95%','95%'];"
+								data-vbility="t,t,f,t"
+								data-border="bor:32px,32px,32px,32px;"
+								data-frame_999="o:0;st:w;sR:8700;"
+								style="z-index:9;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="480" height="270" data-lazyload="assets/background_main_1.gif" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-4-slide-4-layer-6" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="xo:80px;yo:120px,120px,60px,60px;"
+								data-text="w:normal;s:18,18,16,16;l:25,25,15,15;fw:600;"
+								data-frame_999="o:0;st:w;sR:8700;"
+								style="z-index:17;font-family:'Montserrat';"
+							>Уходовая косметика для лица и тела 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-4-slide-4-layer-7" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="xo:80px;yo:150px,150px,90px,90px;"
+								data-text="w:normal;s:64,64,70,70;l:72,72,75,75;fw:700;"
+								data-frame_999="o:0;st:w;sR:8700;"
+								style="z-index:16;font-family:'Sora';"
+							>Booom<br />
+BRAND 
+							</rs-layer><!--
+
+							--><a
+								id="slider-4-slide-4-layer-8" 
+								class="rs-layer rev-btn"
+								href="https://booombrand.ru/shop" target="_self"
+								data-type="button"
+								data-rsp_ch="on"
+								data-xy="xo:80px;yo:330px,330px,270px,270px;"
+								data-text="w:normal;s:14,14,20,20;l:21,21,20,20;fw:600;"
+								data-dim="minh:0px,0px,none,0px;"
+								data-padding="t:11,11,20,20;r:30,30,40,40;b:11,11,20,20;l:30,30,40,40;"
+								data-border="bor:45px,45px,45px,45px;"
+								data-frame_999="o:0;st:w;sR:8700;"
+								data-frame_hover="c:#0b3954;bgc:#fff;bor:45px,45px,45px,45px;"
+								style="z-index:19;background-color:#ceb6d8;font-family:'Sora';"
+							>GO TO SHOP 
+							</a><!--
+
+							--><rs-layer
+								id="slider-4-slide-4-layer-9" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:l,l,c,c;xo:50px,50px,0,50px;yo:80px,80px,20px,20px;"
+								data-text="w:normal;s:20,20,12,12;l:0,0,15,15;"
+								data-dim="w:300px,300px,90%,90%;h:180px,180px,auto,180px;"
+								data-vbility="f,f,t,t"
+								data-border="bor:16px,16px,16px,16px;"
+								data-frame_999="o:0;st:w;sR:8700;"
+								style="z-index:10;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="270" height="480" data-lazyload="assets/background_main_33.gif" data-no-retina> 
+							</rs-layer><!--
+
+							--><a
+								id="slider-4-slide-4-layer-10" 
+								class="rs-layer rev-btn"
+								href="https://booombrand.ru/about" target="_self"
+								data-type="button"
+								data-color="#0b3954"
+								data-rsp_ch="on"
+								data-xy="xo:260px,260px,320px,320px;yo:330px,330px,270px,270px;"
+								data-text="w:normal;s:14,14,20,20;l:21,21,20,20;fw:600;"
+								data-dim="minh:0px,0px,none,0px;"
+								data-padding="t:11,11,20,20;r:30,30,40,40;b:11,11,20,20;l:30,30,40,40;"
+								data-border="bor:45px,45px,45px,45px;"
+								data-frame_999="o:0;st:w;sR:8700;"
+								data-frame_hover="c:#fff;bgc:#ceb6d8;bor:45px,45px,45px,45px;"
+								style="z-index:18;background-color:#ffffff;font-family:'Sora';"
+							>ABOUT US 
+							</a><!--
+-->						</rs-slide>
+					</rs-slides>
+				</rs-module>
+				<script>
+					
+				</script>
+<script>
+		if(typeof revslider_showDoubleJqueryError === "undefined") {function revslider_showDoubleJqueryError(sliderID) {console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");console.log("To fix this, you can:");console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");console.log("2. Find the double jQuery.js inclusion and remove it");return "Double Included jQuery Library";}}
+</script>
+			</rs-module-wrap>
+			<!-- END REVOLUTION SLIDER -->
+
+				<script>
+					var	tpj = jQuery;
+					if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+					if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+					RS_MODULES.modules["revslider41"] = {once: RS_MODULES.modules["revslider41"]!==undefined ? RS_MODULES.modules["revslider41"].once : undefined, init:function() {
+						window.revapi4 = window.revapi4===undefined || window.revapi4===null || window.revapi4.length===0  ? document.getElementById("rev_slider_4_1") : window.revapi4;
+						if(window.revapi4 === null || window.revapi4 === undefined || window.revapi4.length==0) { window.revapi4initTry = window.revapi4initTry ===undefined ? 0 : window.revapi4initTry+1; if (window.revapi4initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider41"].init()}); return;}
+						window.revapi4 = jQuery(window.revapi4);
+						if(window.revapi4.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_4_1"); return;}
+						revapi4.revolutionInit({
+								revapi:"revapi4",
+								DPR:"dpr",
+								sliderLayout:"fullwidth",
+								visibilityLevels:"1240,1240,778,778",
+								gridwidth:"1240,1240,778,778",
+								gridheight:"740,740,780,780",
+								lazyType:"smart",
+								perspective:600,
+								perspectiveType:"global",
+								editorheight:"740,768,780,720",
+								responsiveLevels:"1240,1240,778,778",
+								progressBar:{disableProgressBar:true},
+								navigation: {
+									onHoverStop:false
+								},
+								viewPort: {
+									global:true,
+									globalDist:"-200px",
+									enable:false
+								},
+								fallbacks: {
+									allowHTML5AutoPlayOnAndroid:true
+								},
+						});
+						
+					}} // End of RevInitScript
+					if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
+				</script>
+
+
+
+<style>.hide-me-now{display:none !important}.show-me-now{display:block !important; transition:all .5s ease-in-out}</style>
+		</body>
+				</html>
+		
